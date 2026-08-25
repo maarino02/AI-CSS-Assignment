@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900&display=swap');
+
+/* --- 1. Color Variables --- */
+:root {
+    --dark-bg: #1F2937;
+    --accent-blue: #3882F6;
+    --text-white: #F9FAF8;
+    --text-gray: #E5E7EB;
+}
+
+/* --- 2. Global Styles and Typography --- */
+body {
+    margin: 0;      /* Reset default margin that browsers apply, giving us full control over spacing */
+    font-family: 'Roboto',
+    sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a, p {
+    font-size: 18px;
+    color: var(--text-gray);
+}
+h1, h2, h3 { margin: 0; }
+
+/* --- 3. Shared Rules (Layout) --- */
+.header, .hero, .cta-container {
+    display: flex;
+    justify-content: space-between;     /* Aligns child elements with space between them, creating a balanced layout */
+    align-items: center;        /* Vertically centers child elements within the flex container */
+}
+.quote-section, .cta-section, .footer {
+    display: flex;
+    justify-content: center;        /* Centers child elements horizontally within the flex container */
+    align-items: center;
+}
+.info-section, .cta-section { padding: 80px 12%; }      /* Adds vertical and horizontal padding to create space around the content */
+
+/* --- 4. Buttons --- */
+.btn, .btn-outline {
+    background-color: var(--accent-blue);
+    color: var(--text-white);
+    padding: 10px 28px;     /* Adds vertical and horizontal padding to increase the clickable area of the button */
+    border-radius: 8px;     /* Rounds the corners of the button for a softer appearance */
+    font-weight: bold;      /* Makes the button text bold to enhance visibility and emphasis */
+    cursor: pointer;        /* Changes the cursor to a pointer when hovering over the button, indicating it's clickable */
+}
+.btn { border: none; }      
+.btn-outline {
+    border: 2px solid var(--text-white);        /* Creates a visible border around the button, giving it an outlined appearance */
+    font-size: 16px;
+}
+
+/* --- 5. Header & Hero --- */
+.dark-bg { 
+    background-color: var(--dark-bg);
+    padding: 32px 12% 80px 12%;     /* Adds padding to the top, right, bottom, and left of the dark background section, creating space around the content */
+}
+.header { margin-bottom: 80px; }        /* Adds space below the header to separate it from the content that follows */
+nav {
+    display: flex;
+    gap: 24px;      /* Adds horizontal spacing between navigation links for better readability and aesthetics */
+}
+.logo img {
+    height: 80px;       /* Sets a fixed height for the logo image, ensuring consistent sizing across different screen sizes */
+    width: auto;
+    border-radius: 8px;
+}
+.hero { gap: 48px; }
+.hero-text, .hero-image-container, .cta-text { flex: 1; }
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--text-white);
+    margin-bottom: 10px;
+}
+.hero-text p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+.hero-image-container {
+    display: flex;
+    justify-content: flex-end;      /* Aligns the hero image to the right side of the container, creating a visually appealing layout */
+    align-items: center;
+}
+.hero-image-container img {
+    max-width: 100%;        /* Ensures the image scales down to fit within its container without overflowing, maintaining responsiveness */
+    height: auto;       /* Maintains the image's aspect ratio while allowing it to scale proportionally */
+    border-radius: 8px;
+}
+
+/* --- 6. Information and Cards --- */
+.info-section {
+    background-color: #FFFFFF;
+    flex-direction: column;
+}
+.info-section h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--dark-bg);
+    margin-bottom: 48px;
+    text-align: center;
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    width: 100%;
+    flex-wrap: wrap;        /* Allows cards to wrap to the next line on smaller screens, ensuring a responsive layout */
+ }
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;        /* Allows the card to grow and fill available space within the container, ensuring a flexible layout */
+    min-width: 160px;
+    max-width: 200px;
+}
+.card-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;      /* Ensures the image covers the entire area of the container while maintaining its aspect ratio, preventing distortion */
+    border: 3px solid var(--accent-blue);       /* Adds a solid border around the image with a specified color, enhancing its visual prominence */
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+.card p {
+    font-size: 16px;
+    color: #4B5563;
+    text-align: center;
+    margin: 0;
+}
+
+/* --- 7. Quote --- */
+.quote-section {
+    background-color: var(--text-gray);
+    padding: 100px 20%;
+}
+.quote-container { 
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--dark-bg);
+    margin-bottom: 16px; 
+    line-height: 1.4;
+}
+.quote-author {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-bg);
+    text-align: right; 
+    margin: 0;
+}
+
+/* --- 8. Call To Action (CTA) & Footer --- */
+.cta-container {
+    background-color: var(--accent-blue);
+    border-radius: 8px;
+    padding: 48px 72px;
+    width: 100%;
+    max-width: 900px;
+}
+.cta-text { margin-right: 32px; }
+.cta-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 8px;
+}
+.cta-text p {
+    margin: 0; 
+    color: var(--text-gray);
+}
+.footer {
+    background-color: var(--dark-bg);
+    padding: 32px 0;
+}
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
