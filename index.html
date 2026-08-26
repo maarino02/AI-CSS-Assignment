@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MMZ Interior Design</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMZ Interior Design</title>
+    <link rel="stylesheet" href="styling.css">
 </head>
 
 <body>
@@ -12,7 +13,14 @@
             <div class="logo">
                 <img src="landing_media/logo.jpg" alt="MMZ Interior Design Logo">
             </div>
-            <nav>
+            <!-- Checkbox for burger menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="main-nav">
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="product.html">Product</a>
@@ -20,38 +28,42 @@
         </header>
         <section class="hero">
             <div class="hero-text">
-                <h1>This website is awesome</h1>
-                <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast!</p>
+                <h1>Crafting Modern Elegance</h1>
+                <p>Discover bespoke interior design solutions that bring harmony and style to every room. Your perfect space starts right here.</p>
                 <button class="btn">Sign up</button>
             </div>
-            <div class="img-placeholder">this is a placeholder for an image</div>
+            <div class="hero-image-container">
+                <img src="landing_media/header_image.jpg" alt="MMZ Interior Design hero image">
+            </div>
         </section>
     </div>
     <section class="info-section">
-        <h2>Some random information.</h2>
+        <h2>Find Your Inspiration</h2>
         <div class="cards-container">
             <div class="card">
-                <div class="card-img"></div>
-                <p>this is some subtext under an illustration or image 1</p>
+                <img src="landing_media/card1.jpg" alt="Info 1" class="card-img">
+                <p>Beautiful living room interior featuring high vaulted ceilings, a loft area, hardwood floors, and a fireplace in this new luxury home.
+                    It boasts a large row of windows.</p>
             </div>
             <div class="card">
-                <div class="card-img"></div>
-                <p>this is some subtext under an illustration or image 2</p>
+                <img src="landing_media/card2.jpg" alt="Info 2" class="card-img">
+                <p>Modern kitchen design with granite countertops, stainless steel appliances, and a spacious island perfect for entertaining.</p>
             </div>
             <div class="card">
-                <div class="card-img"></div>
-                <p>this is some subtext under an illustration or image 3</p>
+                <img src="landing_media/card3.jpg" alt="Info 3" class="card-img">
+                <p>Beautiful modern living room interior with wood flooring and a fireplace in a new luxury home.</p>
             </div>
             <div class="card">
-                <div class="card-img"></div>
-                <p>this is some subtext under an illustration or image</p>
+                <img src="landing_media/card4.jpg" alt="Info 4" class="card-img">
+                <p>A living room with a large, bright sofa, many cushions, and a black grand piano. A large picture window offers views of the valley.</p>
             </div>
         </div>
     </section>
     <section class="quote-section">
         <div class="quote-container">
-            <p class="quote-text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-            <p class="quote-author">-Thor</p>
+            <p class="quote-text">"Working with the MMZ team was an absolute dream. They took our vague ideas and turned our house into a beautiful, 
+                functional home that we never want to leave. Their attention to detail is truly unmatched."</p>
+            <p class="quote-author">-Branko</p>
         </div>
     </section>
     <section class="cta-section">
