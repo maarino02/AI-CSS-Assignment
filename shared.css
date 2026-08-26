@@ -1,0 +1,135 @@
+
+/* --------------------------------------------------
+   Style Sheet for Shared Elemnets
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+   Footer
+-------------------------------------------------- */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    padding: 48px 12% 24px;
+
+    background-color: var(--dark-bg);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 100%;
+    gap: 72px;
+    padding-bottom: 32px;
+}
+
+
+/* Footer Brand */
+
+.footer-brand {
+    min-width: 230px;
+}
+
+.footer-brand h2 {
+    margin: 0 0 8px;
+
+    font-size: 22px;
+    color: var(--text-white);
+}
+
+.footer-brand p {
+    margin: 0;
+
+    font-size: 16px;
+    color: var(--text-gray);
+}
+
+
+/* Footer Navigation and Social */
+
+.footer-nav,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav {
+    gap: 12px;
+}
+
+.footer-social {
+    gap: 8px;
+}
+
+.footer-nav a,
+.footer-social a {
+    font-size: 16px;
+    color: var(--text-gray);
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus,
+.footer-social a:hover,
+.footer-social a:focus {
+    color: var(--accent-blue);
+}
+
+.footer-social p {
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+
+.footer-copyright {
+    width: 100%;
+    margin: 0;
+    padding-top: 24px;
+
+    border-top: 1px solid #4B5563;
+
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 40px 5% 24px;
+    }
+
+    .footer-content {
+        gap: 40px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 28px;
+
+        text-align: center;
+    }
+
+    .footer-nav,
+    .footer-social {
+        align-items: center;
+    }
+
+}
