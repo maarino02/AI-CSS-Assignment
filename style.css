@@ -6,6 +6,7 @@
     --accent-blue: #3882F6;
     --text-white: #F9FAF8;
     --text-gray: #E5E7EB;
+    --text-dark: #1F2937;
 }
 
 /* --- 2. Global Styles and Typography --- */
@@ -35,6 +36,7 @@ h1, h2, h3 { margin: 0; }
     align-items: center;
 }
 .info-section, .cta-section { padding: 80px 12%; }      /* Adds vertical and horizontal padding to create space around the content */
+.info-section > p { color: var(--text-dark); }  /* Dark text color */
 
 /* --- 4. Buttons --- */
 .btn, .btn-outline {
