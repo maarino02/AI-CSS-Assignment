@@ -1,1 +1,204 @@
-d
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.dark-bg {
+    background-color: #1F2937;
+    padding: 32px 12% 80px 12%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+nav {
+    display: flex;
+    gap: 24px;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+.hero-text, .img-placeholder {
+    flex: 1;
+}
+.hero-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+    margin-top: 0;
+}
+.logo img {
+    height: 80px;
+    width: auto;
+    border-radius: 8px;
+}
+a, p {
+    font-size: 18px;
+    color: #E5E7EB;
+    text-decoration: none;
+}
+.btn {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 8px;
+}
+.img-placeholder {
+    background-color: #6B7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+}
+
+.info-section {
+    padding: 80px 12%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-section h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    margin-top: 0;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    width: 100%;
+    flex-wrap: wrap; /* Importante para que en el futuro sea responsive */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 160px;
+    max-width: 200px; /* Evita que las tarjetas sean demasiado grandes en pantallas muy anchas */
+}
+
+.card-img {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882F6;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #4B5563;
+    text-align: center;
+    margin: 0;
+}
+/* --- Sección: Quote --- */
+.quote-section {
+    background-color: #E5E7EB;
+    padding: 100px 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0 0 16px 0;
+    line-height: 1.4;
+}
+
+.quote-author {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    text-align: right;
+    margin: 0;
+}
+
+/* --- Sección: Call to action (CTA) --- */
+.cta-section {
+    padding: 80px 12%;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 48px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Evita que la caja azul sea demasiado ancha en pantallas grandes */
+}
+
+.cta-text {
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    margin-right: 32px;
+}
+
+.cta-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #F9FAF8;
+    margin: 0 0 8px 0;
+}
+
+.cta-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+.btn-outline {
+    background-color: #3882F6; /* Mismo fondo que la caja o transparent */
+    color: #F9FAF8;
+    padding: 10px 28px;
+    border: 2px solid #F9FAF8;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1F2937;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: #E5E7EB;
+    font-size: 16px;
+    margin: 0;
+}
