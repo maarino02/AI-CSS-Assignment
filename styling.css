@@ -184,3 +184,105 @@ h1 {
     margin: 0;
     font-size: 16px;
 }
+
+/* --- 9. Media Queries (Responsive Design) --- */
+.menu-toggle, .burger-menu {
+    display: none;
+}
+
+/* --- TABLET (768px y menos) --- */
+@media (max-width: 768px) {
+    /* 1. General adjustments of margins (padding) */
+    .dark-bg, .info-section, .cta-section {
+        padding: 40px 5%;       /* Reduces horizontal padding to accommodate smaller screen widths, ensuring content remains accessible and visually balanced */
+    }
+    .quote-section {
+        padding: 60px 10%;
+    }
+
+    /* 2. Burguer menu */
+    .header {
+        position: relative;     /* Fixes the header in place, allowing the burger menu to be positioned relative to it */
+    }
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+    /* The three lines of the burger menu */
+    .burger-menu span {
+        width: 30px;
+        height: 3px;
+        background-color: var(--text-white);
+        border-radius: 2px;
+    }
+    
+    /* Hide the navigation menu */
+    .main-nav {
+        position: absolute;
+        top: 80px; /* We put it below the logo */
+        left: 0;
+        width: 100%;
+        background-color: var(--dark-bg);
+        flex-direction: column; /* Links in vertical */
+        align-items: center;
+        padding: 0;
+        gap: 24px;
+        max-height: 0; /* Hidden by default */
+        overflow: hidden; /* Prevents text from overflowing */
+        transition: max-height 0.3s ease; /* Smooth animation when opening */
+    }
+    
+    /* When the hidden checkbox is checked, we display the menu */
+    .menu-toggle:checked ~ .main-nav {
+        max-height: 250px;
+        padding: 20px 0;
+    }
+
+    /* 3. Hero Section */
+    .hero {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        gap: 40px;
+    }
+    .hero-image-container {
+        justify-content: center;
+    }
+
+    /* 4. Call to Action */
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 32px;
+    }
+    .cta-text {
+        margin-right: 0; /* Eliminate the right margin */
+        margin-bottom: 32px;
+    }
+}
+
+/* --- MOBILE (up to 480px, covers your 375px requirement) --- */
+@media (max-width: 480px) {
+    /* Adjust font sizes for smaller screens */
+    h1 {
+        font-size: 36px;
+    }
+    .info-section h2 {
+        font-size: 28px;
+    }
+    .quote-text {
+        font-size: 24px;
+    }
+    .quote-author {
+        font-size: 20px;
+    }
+    
+    /* Adjust the cards so they aren't stuck so close together. */
+    .cards-container {
+        gap: 32px;
+    }
+    .card {
+        min-width: 100%; /* Ensure each card takes the full width on mobile */
+    }
+}
