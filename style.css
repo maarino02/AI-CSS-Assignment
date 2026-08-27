@@ -178,6 +178,21 @@ h1 {
     margin: 0; 
     color: var(--text-gray);
 }
+
+/* About page */
+.about-img {
+    border-radius: 16px;
+    display: block;
+    margin-bottom: 16px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.central-text {
+    text-align: center;
+}
+
+/* Footer */
 .footer {
     display: flex;
     flex-direction: column;
