@@ -1,1 +1,301 @@
-f
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Modern • Minimal • Zen</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact/contact.css">
+</head>
+
+
+<body>
+
+    <!-- Header and page introduction -->
+    <div class="dark-bg">
+
+        <header class="header">
+
+            <div class="logo">
+                <a href="index.html" aria-label="Modern Minimal Zen home">
+                    <img src="landing_media/logo.jpg"
+                         alt="Modern Minimal Zen Logo">
+                </a>
+            </div>
+
+
+            <!-- CSS-only burger menu -->
+            <input type="checkbox"
+                   id="menu-toggle"
+                   class="menu-toggle">
+
+
+            <label for="menu-toggle"
+                   class="burger-menu"
+                   aria-label="Open navigation menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </label>
+
+
+            <nav class="main-nav"
+                 aria-label="Main navigation">
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html"
+                   aria-current="page">
+                    Contact
+                </a>
+
+                <a href="product.html">Product</a>
+
+            </nav>
+
+        </header>
+
+
+        <section class="contact-heading">
+
+            <h1 id="contact-page-heading">
+                Let's Create Your Space
+            </h1>
+
+            <p>
+                Have a project in mind? Tell us about it and let us help
+                bring your vision to life.
+            </p>
+
+        </section>
+
+    </div>
+
+
+    <main>
+
+        <section class="contact-section"
+                 aria-labelledby="contact-page-heading">
+
+
+            <!-- Contact page image -->
+            <figure class="contact-image">
+
+                <img src="contact/contact-photo.jpg"
+                     alt="Interior designers discussing plans for a design project">
+
+            </figure>
+
+
+            <!-- Right side of contact page -->
+            <div class="contact-content">
+
+
+                <!-- Direct contact information -->
+                <aside class="contact-details"
+                       aria-labelledby="contact-details-heading">
+
+                    <h2 id="contact-details-heading">
+                        Get in Touch
+                    </h2>
+
+                    <p>
+                        Whether you're planning a complete renovation
+                        or simply looking for advice, we'd love to hear
+                        from you.
+                    </p>
+
+
+                    <address class="contact-info">
+
+                        <p>
+                            <strong>Email:</strong>
+
+                            <a href="mailto:hello@mmzinteriors.com">
+                                hello@mmzinteriors.com
+                            </a>
+                        </p>
+
+
+                        <p>
+                            <strong>Phone:</strong>
+
+                            <a href="tel:+48123456789">
+                                +48 123 456 789
+                            </a>
+                        </p>
+
+
+                        <p>
+                            <strong>Instagram:</strong>
+
+                            <a href="https://www.instagram.com/mmzinteriors/">
+                                @mmzinteriors
+                            </a>
+                        </p>
+
+                    </address>
+
+                </aside>
+
+
+
+                <!-- Contact form -->
+                <section class="contact-form-container"
+                         aria-labelledby="contact-form-heading">
+
+                    <h2 id="contact-form-heading">
+                        Contact Us
+                    </h2>
+
+
+                    <form>
+
+                        <fieldset>
+
+                            <legend>
+                                Tell us about your project
+                            </legend>
+
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input type="text"
+                                       id="name"
+                                       name="name"
+                                       autocomplete="name"
+                                       required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input type="email"
+                                       id="email"
+                                       name="email"
+                                       autocomplete="email"
+                                       required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="subject">
+                                    How can we help?
+                                </label>
+
+                                <select id="subject"
+                                        name="subject"
+                                        required>
+
+                                    <option value=""
+                                            selected
+                                            disabled>
+                                        Select a subject
+                                    </option>
+
+                                    <option value="quote">
+                                        Request a Design Quote
+                                    </option>
+
+                                    <option value="consultation">
+                                        Book a Consultation
+                                    </option>
+
+                                    <option value="styling">
+                                        Furniture & Styling
+                                    </option>
+
+                                    <option value="general">
+                                        General Question
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea id="message"
+                                          name="message"
+                                          rows="6"
+                                          required></textarea>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <button type="submit"
+                                class="btn">
+                            Send
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>Modern • Minimal • Zen</h2>
+                <p>Interior Design Studio</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="product.html">Product</a>
+            </nav>
+
+            <div class="footer-social">
+                <p>Follow us</p>
+
+                <a href="https://www.instagram.com/mmzinteriors/"
+                target="_blank"
+                rel="noopener noreferrer">
+                    Instagram @mmzinteriors
+                </a>
+            </div>
+
+        </div>
+
+        <p class="footer-copyright">
+            Copyright © MMZ Interior Design 2026
+        </p>
+
+    </footer>
+</body>
+
+</html>
