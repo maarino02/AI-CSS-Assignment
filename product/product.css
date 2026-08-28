@@ -1,0 +1,256 @@
+/* --------------------------------------------------
+   Projects Page
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+   Page Introduction
+-------------------------------------------------- */
+
+.projects-heading {
+    max-width: 760px;
+}
+
+.projects-heading p {
+    max-width: 680px;
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* --------------------------------------------------
+   Category Navigation
+-------------------------------------------------- */
+
+.project-categories {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    padding: 16px 5%;
+
+    background-color: #FFFFFF;
+    border-bottom: 1px solid var(--text-gray);
+    box-shadow: 0 4px 12px rgba(31, 41, 55, 0.08);
+}
+
+.project-categories a {
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.project-categories a:hover,
+.project-categories a:focus {
+    color: var(--text-white);
+    background-color: var(--accent-blue);
+}
+
+
+/* --------------------------------------------------
+   Project Sections
+-------------------------------------------------- */
+
+.project-section {
+    padding: 80px 12%;
+
+    background-color: #FFFFFF;
+
+    scroll-margin-top: 90px;
+}
+
+.project-section-alternate {
+    background-color: #F3F4F6;
+}
+
+.project-section-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-section h2 {
+    margin-bottom: 12px;
+
+    text-align: center;
+    font-size: 36px;
+    color: var(--text-dark);
+}
+
+.section-introduction {
+    max-width: 700px;
+    margin: 0 auto 40px;
+
+    text-align: center;
+    line-height: 1.6;
+    color: #4B5563;
+}
+
+
+/* --------------------------------------------------
+   Project Cards
+-------------------------------------------------- */
+
+.projects-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.project-card {
+    display: flex;
+    flex: 1 1 360px;
+    flex-direction: column;
+
+    max-width: 540px;
+    overflow: hidden;
+
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(31, 41, 55, 0.12);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(31, 41, 55, 0.18);
+}
+
+.project-card figure {
+    margin: 0;
+}
+
+.project-card img {
+    display: block;
+
+    width: 100%;
+    height: 340px;
+
+    object-fit: cover;
+}
+
+.project-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    padding: 28px;
+}
+
+.project-card-content h3 {
+    margin-bottom: 12px;
+
+    font-size: 24px;
+    color: var(--text-dark);
+}
+
+.project-card-content p {
+    margin-top: 0;
+
+    line-height: 1.6;
+    color: #4B5563;
+}
+
+.project-card-content .project-type {
+    margin-bottom: 8px;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-blue);
+}
+
+/* --------------------------------------------------
+   Tablet
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .projects-heading {
+        text-align: center;
+    }
+
+    .project-section {
+        padding: 64px 5%;
+
+        scroll-margin-top: 110px;
+    }
+
+    .project-card img {
+        height: 300px;
+    }
+
+}
+
+
+/* --------------------------------------------------
+   Mobile
+-------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .project-categories {
+        gap: 8px;
+
+        padding: 12px 3%;
+    }
+
+    .project-categories a {
+        padding: 8px 10px;
+
+        font-size: 14px;
+    }
+
+    .project-section {
+        padding: 48px 5%;
+
+        scroll-margin-top: 120px;
+    }
+
+    .project-section h2 {
+        font-size: 28px;
+    }
+
+    .section-introduction {
+        margin-bottom: 28px;
+
+        font-size: 16px;
+    }
+
+    .project-card {
+        flex-basis: 100%;
+    }
+
+    .project-card img {
+        height: 240px;
+    }
+
+    .project-card-content {
+        padding: 22px;
+    }
+
+    .project-card-content h3 {
+        font-size: 21px;
+    }
+
+}
