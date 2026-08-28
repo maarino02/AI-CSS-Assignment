@@ -1,0 +1,17 @@
+/* --------------------------------------------------
+   About Page
+-------------------------------------------------- */
+
+.about-img {
+    display: block;
+
+    width: 100%;
+    margin-bottom: 16px;
+
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+.central-text {
+    text-align: center;
+}
