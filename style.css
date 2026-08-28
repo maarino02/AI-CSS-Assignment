@@ -59,6 +59,10 @@ h1, h2, h3 { margin: 0; }
     padding: 32px 12% 80px 12%;     /* Adds padding to the top, right, bottom, and left of the dark background section, creating space around the content */
 }
 .header { margin-bottom: 80px; }        /* Adds space below the header to separate it from the content that follows */
+.main-nav a:hover, .main-nav a:focus {
+    color: var(--accent-blue);      /* Changes the text color of navigation links on hover or focus to provide visual feedback to users */
+
+}
 nav {
     display: flex;
     gap: 24px;      /* Adds horizontal spacing between navigation links for better readability and aesthetics */
@@ -306,11 +310,12 @@ h1 {
     }
     
     /* Hide the navigation menu */
-    .main-nav {
+    .main-nav:hover {
         position: absolute;
         top: 80px; /* We put it below the logo */
         left: 0;
         width: 100%;
+        color: var(--accent-blue);
         background-color: var(--dark-bg);
         flex-direction: column; /* Links in vertical */
         align-items: center;
